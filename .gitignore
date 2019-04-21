@@ -1,0 +1,11 @@
+*.aux
+*.glo
+*.log
+*.out
+*.pdf
+*.gz
+*.toc
+*.DS_Store
+*.bbl
+*.blg
+*.dvi
