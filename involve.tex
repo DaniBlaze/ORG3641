@@ -86,6 +86,18 @@
 
 % Parts
 \cleardoublepage
+% Style chapter one with involve image.
+\titleformat{\chapter}[display]
+ {\bfseries\Large}
+ {}
+ {0pt}
+ {\color{involvecolor}\titlerule[2.0pt]\vspace{2ex}\filright\color{black}}
+ [\color{involvecolor}\vspace{0ex}{\titlerule[2.0pt]}]
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\chapter[Innledning]{\includegraphics[scale=0.5]{bilder/logo.png}}
+\input{kapittel/innledning}
+
 % Style chapter headings.
 \titleformat{\chapter}[display]
  {\bfseries\Large}
@@ -93,11 +105,7 @@
  {0pt}
  {\color{involvecolor}\titlerule[2.0pt]\vspace{2ex}\filright\color{black} \thechapter . }
  [\color{involvecolor}\vspace{2ex}{\titlerule[2.0pt]}]
-\pagenumbering{arabic}
-\setcounter{page}{1}
-\chapter{Innledning}
-\input{kapittel/innledning}
-
+ 
 % chapter heading as preface and toc
 \titleformat{\chapter}[display]
  {\bfseries\Large}
