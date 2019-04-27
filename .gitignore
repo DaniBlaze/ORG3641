@@ -2,7 +2,6 @@
 *.glo
 *.log
 *.out
-*.pdf
 *.gz
 *.toc
 *.DS_Store
