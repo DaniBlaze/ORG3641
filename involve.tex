@@ -22,6 +22,7 @@
 \usepackage{ragged2e}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 \usepackage[norsk]{babel}
+\usepackage[final]{pdfpages}
 
 \definecolor{involvecolor}{RGB}{0,206,209}
 
@@ -133,4 +134,10 @@
 \bibliography{mineReferanser}		% expects file "mineReferanser.bib"
 }
 
+\cleardoublepage
+\renewcommand\appendixpagename{Appendiks}
+\appendix
+\appendixpage
+\includepdf[pages=1,scale=.8,pagecommand=\chapter{Spørreundersøkelse Involve},width=\textwidth]{appendiks/sporreundersokelse.pdf}
+\includepdf[pages=2-,scale=.8,pagecommand={},width=\textwidth]{appendiks/sporreundersokelse.pdf}
 \end{document}
